@@ -9,7 +9,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.2/minty/bootstrap.min.css" />
 
 
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/magnific-popup.css">
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
 
+<!-- MAIN CSS -->
+<link rel="stylesheet" href="../css/templatemo-style.css">
 
 <style>
   .countdown.show .running {
@@ -152,14 +159,14 @@
 </section>
 
 
-
   
-  <div id="jquery-script-menu">
+
 <div class="jquery-script-center">
 <ul>
   <center>
   <h3 class="text-center" style="margin-top: 50px; margin-left: 100px;">Createdbyandre</h3>
 </center>
+
 </ul><div id="carbon-block"></div>
 <div class="jquery-script-ads"><script type="text/javascript"><!--
 google_ad_client = "ca-pub-2783044520727903";
@@ -201,7 +208,7 @@ src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
   <div class="ended">
       <div class="text">Flash Sale Close</div>
       <div class="break"></div>
-      <button class="sp_notify_prompt">Suscribe for next event!</button>
+      <button class="section-btn"  href="#" data-toggle="modal" data-target="#modal-form">Suscribe for next event!</button>
   </div>
 </div>
 
@@ -231,7 +238,8 @@ src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
 <div class="ended">
     <div class="text">Flash Sale Close</div>
     <div class="break"></div>
-    <button class="sp_notify_prompt">Suscribe for next event!</button>
+    <button sp-show-form="199621">Show form</button>
+<script src="//web.webformscr.com/apps/fc3/build/loader.js" async sp-form-id="43794ecdf449d57eaf9a1b7028569cec1791ea1439a69ed6d3dfd9668182517b"></script>
 </div>
 </div>
 
@@ -261,6 +269,68 @@ src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
                 </div>
             </div>
             </div>
+
+            <!-- MODAL -->
+    <section class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+           <div class="modal-content modal-popup">
+
+                <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                     </button>
+                </div>
+
+                <div class="modal-body">
+                     <div class="container-fluid">
+                          <div class="row">
+
+                               <div class="col-md-12 col-sm-12">
+                                    <div class="modal-title">
+                                         <h2>Createdbyandre</h2>
+                                    </div>
+
+                                    <!-- NAV TABS -->
+                                    <ul class="nav nav-tabs" role="tablist">
+                                         <li class="active"><a href="#sign_up" aria-controls="sign_up" role="tab" data-toggle="tab">Buat Akun</a></li>
+                                         <li><a href="#sign_in" aria-controls="sign_in" role="tab" data-toggle="tab">Login</a></li>
+                                    </ul>
+
+                                    <!-- TAB PANES -->
+                                    <div class="tab-content">
+                                         <div role="tabpanel" class="tab-pane fade in active" id="sign_up">
+                                              <form action="../1. Login/sign-up.html">
+                                                   <!--Gapake--
+                                                   <input type="text" class="form-control" name="name" placeholder="Name" required>
+                                                   <input type="telephone" class="form-control" name="telephone" placeholder="Telephone" required>
+                                                   <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                                   <input type="password" class="form-control" name="password" placeholder="Password" required>
+                                                   <!--Gapake-->
+                                                   <input type="submit" class="form-control" value="Daftar Akun">
+                                              </a>
+                                              </form>
+                                         </div>
+
+                                         <div role="tabpanel" class="tab-pane fade in" id="sign_in">
+                                              <form action="../1. Login/index.html">
+                                                   <!--Gapake--
+                                                   <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                                   <input type="password" class="form-control" name="password" placeholder="Password" required>
+                                                   <!--Gapake-->
+                                                   <input type="submit" class="form-control" name="submit" value="Login">
+                                                   <a href="../1. Login/reset.html">Forgot your password?</a>
+                                              </form>
+                                         </div>
+                                    </div>
+                               </div>
+
+                          </div>
+                     </div>
+                </div>
+
+           </div>
+      </div>
+ </section>
             
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="multi-countdown.js"></script>
