@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Lorem Ipsum Cakes</title>
+        <title>Createdbyandre | Payment</title>
         <meta charset="utf-8">
         <meta http-equiv="Pragma" content="no-cache" />
         <meta http-equiv="Expires" content="0" />
@@ -33,7 +33,7 @@
             }
             #cover{
                 position: fixed;
-                background: url(cover.jpg) no-repeat center center fixed; 
+                background: url(cover.png) no-repeat center center fixed; 
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
@@ -159,16 +159,11 @@
                 </div>
                 <div class="block">
                     <h3 align="center" class="nicefont">Pembayaran Via</h3>
-                    <input placeholder="Click to choose your Pembayaran Via..." value="Click to choose your cakes..." readonly onclick="showcakechooser()">
+                    <input placeholder="Click to choose your Pembayaran Via..." value="Click to choose your Payment.." readonly onclick="showcakechooser()">
                     
                 </div>
                 
-                <!--Nggakpakai--
-                <div class="block">
-                    <h3 align="center" class="nicefont">Pemesanan</h3>
-                    <input id="datepicker" placeholder="Click to set Pemesanan..." readonly>
-                </div>
-                <!--Nggakpakai-->
+
                 <div class="block">
                     <h3 align="center" class="nicefont">Pemesanan</h3>
                     <select id="deliverytime">
@@ -304,20 +299,23 @@
                         for(var i = 0; i < orderdetails.cakes.length; i++){
                             oi += products[orderdetails.cakes[i]] + ", "
                         }
-                        var ordermessage = 
-                        "Order number: " + ordernumber + " '%0A',
-                         Order date: " + orderdate + " '%0A',
-                        Name: " + ordername + " '%0A', 
-                        Email: " + orderemail + " '%0A', 
-                        Phone: " + orderphone + " '%0A', 
-                        Pemesanan: " + deliverytime + ", 
-                        Pembayaran Via: " + oi
+                        // var ordermessage = "Order number : " + ordernumber + ", Order date : " + orderdate + ", Name : " + ordername + ", Email : " + orderemail + ", Phone : " + orderphone + ", Delivery Time : " + deliverytime + ", Pembayaran : " + oi
+
+
                         //alert(ordermessage)
-                        var omuri = encodeURI(ordermessage)
-                        location.href = "https://wa.me/6285748805799?text=" + omuri
+                        // var omuri = encodeURI(ordermessage)
+                        // location.href = "https://wa.me/6285748805799?text=" + omuri
+
+                        location.href = `https://wa.me/6285748805799?text=*Order number* : ${ordernumber}
+                        %0A*Order date* : ${orderdate}
+                        %0A*Name* : ${ordername}
+                        %0A*Email* : ${orderemail}
+                        %0A*Phone* : ${orderphone}
+                        %0A*Delivery Time* : ${deliverytime}
+                        %0A*Pembayaran* : ${oi}`
                     }
                     else{
-                        alert("You did not choose any cake yet.")
+                        alert("Anda Belum Mengisi Data.")
                     }
                 }
             }
