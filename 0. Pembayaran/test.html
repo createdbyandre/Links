@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Lorem Ipsum Cakes</title>
+        <title>Createdbyandre | Payment</title>
         <meta charset="utf-8">
         <meta http-equiv="Pragma" content="no-cache" />
         <meta http-equiv="Expires" content="0" />
@@ -305,8 +305,13 @@
                             oi += products[orderdetails.cakes[i]] + ", "
                         }
                         var ordermessage = 
-                        '*Order number* : ' + ordernumber +  '%0A' + 
-                        '*Order date* : ' + orderdate + ", Name: " + ordername + ", Email: " + orderemail + ", Phone: " + orderphone + ", Pemesanan: " + deliverytime + ", Pembayaran Via: " + oi
+                        '*Order number* : ' + ordernumber + '%0A' + 
+                        '*Order date* : ' + orderdate + '%0A' +
+                        '*Name* : ' + ordername + '%0A' +
+                        '*Email* : ' + orderemail + '%0A' +
+                        '*Phone* : ' + orderphone + '%0A' +
+                        '*Pemesanan* : ' + deliverytime + '%0A' +
+                        '*Pembayaran Via* : ' + oi + '%0A' +;
                         //alert(ordermessage)
                         var omuri = encodeURI(ordermessage)
                         location.href = "https://wa.me/6285748805799?text=" + omuri
