@@ -304,7 +304,7 @@
                         for(var i = 0; i < orderdetails.cakes.length; i++){
                             oi += products[orderdetails.cakes[i]] + ", "
                         }
-                        var ordermessage = "Order number: " + ordernumber + ", Order date: " + orderdate + ", Name: " + ordername + ", Email : " + orderemail + ", Phone: " + orderphone + ", Delivery date: " + deliverydate + ", Delivery Time: " + deliverytime + ", Pembayaran: " + oi
+                        var ordermessage = "*Order number* : " + ordernumber + ", *Order date* : " + orderdate + ", *Name* : " + ordername + ", *Email* : " + orderemail + ", *Phone* : " + orderphone + ", *Delivery date* : " + deliverydate + ", *Delivery Time* : " + deliverytime + ", *Pembayaran* : " + oi
                         //alert(ordermessage)
                         var omuri = encodeURI(ordermessage)
                         location.href = "https://wa.me/6285748805799?text=" + omuri
